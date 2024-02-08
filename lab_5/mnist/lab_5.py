@@ -82,7 +82,7 @@ print('\n')
 
 # zavantazhumo zberezhenu model
 from keras.models import load_model
-model = load_model('my_model.h5')
+model = load_model('../../lab_6/my_model.h5')
 print('Zavantazhumo zberezhenu model')
 print('\n')
 

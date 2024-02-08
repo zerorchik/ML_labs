@@ -98,3 +98,21 @@ print('\n')
 import matplotlib.pyplot as plt
 line = plt.plot(x, y)
 plt.show()
+
+# koordunatu x pochatku ta kintsya tochok regresiynoi pryamoi
+import numpy as np
+x = np.array([min(nyc.Date.values), max(nyc.Date.values)])
+print('Krayni roku')
+print(x)
+print('\n')
+
+# prognosovani y
+y = predict(x)
+print('Temperatura v krayni roku')
+print(y)
+print('\n')
+
+# diagrama rozkudy danuh na regresiyniy pryamiy
+import matplotlib.pyplot as plt
+line = plt.plot(x, y)
+plt.show()
